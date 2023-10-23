@@ -1,0 +1,25 @@
+{
+  "name": "form-task",
+  "version": "1.0.0",
+  "description": "Front-end dev task - making a multi-step form ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^7.6.3",
+    "turbo": "^1.10.16"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
